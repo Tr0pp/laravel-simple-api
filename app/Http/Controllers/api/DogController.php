@@ -17,7 +17,7 @@ class DogController extends Controller
     //Faz o insert via requisição
     public function store(Request $request)
     {
-        Dog::create($request->all());
+        return Dog::create($request->all());
     }
 
     //Trás um resultado por algum parâmetro, nesse caso o ID
@@ -39,8 +39,8 @@ class DogController extends Controller
     public function destroy($id)
     {
         $dog = Dog::findOrFail($id);
-        $result = $dog->delete() ? json_encode('success') : json_encode('error');
+        $result = $dog->delete() ? 'success' : 'error';
 
-        return $result;
+        return response()->json($result);
     }
 }
