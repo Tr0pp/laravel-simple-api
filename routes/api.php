@@ -1,3 +1,3 @@
 <?php
 
-Route::apiResource('dogs', App\Http\Controllers\api\DogController::class);
+Route::apiResource('/firebase',App\Http\Controllers\FirebaseController::class);
