@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Routing\Controller;
 
 class FirebaseController extends Controller
 {
@@ -31,7 +32,7 @@ class FirebaseController extends Controller
             $this->index();
         }
 
-        return Http::get("https://vlance-firebase-dev-$this->_firebase.firebaseio.com/$this->_type/{$id}.json")->object();
+        return Http::get("https://vlance-firebase-dev-$this->_firebase.firebaseio.com/$this->_type/{$id}.json")->json();
     }
 
     public function setRequest($request){

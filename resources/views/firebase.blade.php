@@ -3,26 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Firebase consulta</title>
-
+        <title>Firebase</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
-
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
     </head>
-    <body class="antialiased">
+    <body>
         <div id="app">
             <firebase-component></firebase-component>
         </div>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
-<script>
-    import FirebaseComponent from "../js/components/FirebaseComponent";
-    export default {
-        components: { FirebaseComponent }
-    }
-</script>
