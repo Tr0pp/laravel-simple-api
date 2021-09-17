@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="content" v-show="isExpanded(idx)">
                                         <div v-for="(dados, idxDados) in info">
-                                            <div v-if="Array.isArray(dados) === true">
+                                            <div v-if="Array.isArray(dados) === true || typeof dados == 'object'">
                                                 <div class="header-info" @click="toggleExpansion(idxDados)">
                                                     {{ idxDados }}
                                                 </div>
@@ -110,28 +110,27 @@ export default {
 
 <style scoped>
 .header {
-    background-color: #7adaff;
+    background-color: #8eaab7;
     padding: 2px;
     margin-bottom: 2px;
     cursor: pointer;
     font-weight: bold;
-    border: #336175 solid 1px;
+    border: #4c6069 solid 1px;
     border-radius: 3px;
-    color: #000;
+    color: #fff;
 
 }
 
 .header-info {
-    background-color: #989898;
+    background-color: #cbcbcb;
     padding: 2px;
     margin-bottom: 2px;
     margin-top: 2px;
-    margin-left: 8px;
     cursor: pointer;
     font-weight: bold;
-    border: #4d4d4d solid 1px;
+    border: #808080 solid 1px;
     border-radius: 3px;
-    color: #fff;
+    color: #000;
 
 }
 
@@ -152,7 +151,7 @@ export default {
 
 .border-block {
     border: #b4b4b4 solid 0.5px;
-    border-radius: 1.5px;
-    padding: 1px;
+    border-radius: 2px;
+    padding: 2px;
 }
 </style>

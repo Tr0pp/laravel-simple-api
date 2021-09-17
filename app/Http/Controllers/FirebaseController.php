@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller;
 
 class FirebaseController extends Controller
 {
+    protected $_project;
     protected $_firebase;
     protected $_type;
 

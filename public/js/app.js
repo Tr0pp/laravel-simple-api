@@ -6506,7 +6506,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.header[data-v-75f824db] {\n    background-color: #7adaff;\n    padding: 2px;\n    margin-bottom: 2px;\n    cursor: pointer;\n    font-weight: bold;\n    border: #336175 solid 1px;\n    border-radius: 3px;\n    color: #000;\n}\n.header-info[data-v-75f824db] {\n    background-color: #989898;\n    padding: 2px;\n    margin-bottom: 2px;\n    margin-top: 2px;\n    margin-left: 8px;\n    cursor: pointer;\n    font-weight: bold;\n    border: #4d4d4d solid 1px;\n    border-radius: 3px;\n    color: #fff;\n}\n.content[data-v-75f824db] {\n    background-color: #f1f1f1;\n    padding : 5px;\n    border: #cccccc solid 1px;\n    border-radius: 1.3px;\n}\n#toggle[data-v-75f824db] {\n    display: block;\n}\n.searching[data-v-75f824db] {\n    text-align: center;\n}\n.border-block[data-v-75f824db] {\n    border: #b4b4b4 solid 0.5px;\n    border-radius: 1.5px;\n    padding: 1px;\n}\n", ""]);
+exports.push([module.i, "\n.header[data-v-75f824db] {\n    background-color: #8eaab7;\n    padding: 2px;\n    margin-bottom: 2px;\n    cursor: pointer;\n    font-weight: bold;\n    border: #4c6069 solid 1px;\n    border-radius: 3px;\n    color: #fff;\n}\n.header-info[data-v-75f824db] {\n    background-color: #cbcbcb;\n    padding: 2px;\n    margin-bottom: 2px;\n    margin-top: 2px;\n    cursor: pointer;\n    font-weight: bold;\n    border: #808080 solid 1px;\n    border-radius: 3px;\n    color: #000;\n}\n.content[data-v-75f824db] {\n    background-color: #f1f1f1;\n    padding : 5px;\n    border: #cccccc solid 1px;\n    border-radius: 1.3px;\n}\n#toggle[data-v-75f824db] {\n    display: block;\n}\n.searching[data-v-75f824db] {\n    text-align: center;\n}\n.border-block[data-v-75f824db] {\n    border: #b4b4b4 solid 0.5px;\n    border-radius: 2px;\n    padding: 2px;\n}\n", ""]);
 
 // exports
 
@@ -39301,7 +39301,8 @@ var render = function() {
                           },
                           _vm._l(info, function(dados, idxDados) {
                             return _c("div", [
-                              Array.isArray(dados) === true
+                              Array.isArray(dados) === true ||
+                              typeof dados == "object"
                                 ? _c("div", [
                                     _c(
                                       "div",
@@ -51783,8 +51784,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /mnt/c/Users/rodri/Documents/LaravelProject/laravel/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /mnt/c/Users/rodri/Documents/LaravelProject/laravel/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /mnt/c/Users/rodri/Documents/LaravelProject/#api-test/api-test/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /mnt/c/Users/rodri/Documents/LaravelProject/#api-test/api-test/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
